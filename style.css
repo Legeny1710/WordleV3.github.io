@@ -1,0 +1,183 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #111827;
+}
+
+hr{
+    width: 500px;
+}
+
+h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+.answer {
+    color: whitesmoke;
+    font-size: 30px;
+}
+
+.board{
+    width: 350px;
+    height: 420px;
+
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.tile {
+    border: 2px solid lightgrey;
+    width: 60px;
+    height: 60px;
+    margin: 2.5px;
+    border-radius: 5px;
+    
+
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+
+    transition: 0.5s;
+}
+
+@keyframes animatonForLetters {
+    0%{
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+    
+}
+
+.correct {
+    background-color: green;
+    color: whitesmoke;
+    border-color: whitesmoke;
+    animation-duration: 500;
+    animation-delay: 250 ;
+    animation: flip 0.6s ease;
+    animation-name: animatonForLetters;
+}
+
+
+
+.present {
+    background-color: rgb(184, 161, 36);
+    color: whitesmoke;
+    border-color: whitesmoke;
+    animation: flip 0.6s ease;
+    animation-name: animatonForLetters;
+}
+
+.absent {
+    background-color: rgb(85, 85, 85);
+    color: whitesmoke;
+    border-color: whitesmoke;
+    animation: flip 0.6s ease;
+    animation-name: animatonForLetters;
+}
+
+
+.keyboard{
+    margin-top: 5rem;
+}
+
+
+.KeyboardRow {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.KeyboardKey {
+    border:1px solid whitesmoke;
+    width: 36px;
+    height: 40px;
+    margin: 1px;
+    border-radius: 5px;
+    
+
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+
+    transition: 0.5s;
+    
+}
+
+.KeyboardKey:hover {
+    background-color: whitesmoke;
+    color: #111827;
+    cursor: pointer;
+}
+
+
+
+
+.enter-btn {
+    border:1px solid whitesmoke;
+    width: 75px;
+    height: 40px;
+    margin: 1px;
+    border-radius: 5px;
+    
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+
+    transition: 0.5s;
+}
+
+.enter-btn:hover {
+    background-color: rgb(63, 63, 63);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+.newGameBtn {
+    margin-top: 1rem;
+    height: 50px;
+    width: 200px;
+    background-color: #111827;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 1rem;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.newGameBtn:hover {
+    background-color: whitesmoke;
+    color: #111827;
+    transform: translateY(10px);
+}
+
+
